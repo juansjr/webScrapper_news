@@ -26,7 +26,7 @@ def parse_notice(link, today):
             except IndexError:
                 return
 
-            with open(f'{today}/{title}', 'w', encoding = 'utf-8') as f:
+            with open(f'news/{today}/{title}', 'w', encoding = 'utf-8') as f:
                 f.write(title)
                 f.write(os.linesep)
                 f.write(os.linesep)
